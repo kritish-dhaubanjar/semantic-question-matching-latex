@@ -10,10 +10,10 @@
 \newcommand{\submittedBy}%Specify Names and Roll/Symbol Numbers of the Project Group Members
 {
 %Edit Member Names and Roll/Symbol No. and adjust width (\makebox[width]) if necessary 
-\makebox[8.25cm]{Ankit Kharel \hfill [2072/BCT/95]}\\
-\makebox[8.25cm]{Anshul Bikram Rana \hfill [2072/BCT/96]}\\
-\makebox[8.25cm]{Kritish Dhaubanjar \hfill [2072/BCT/102]}\\
-\makebox[8.25cm]{Pradyumna Subedi \hfill [2072/BCT/110]}
+\makebox[7cm]{Ankit Kharel \hfill [38991]}\\
+\makebox[7cm]{Anshul Bikram Rana \hfill [38992]}\\
+\makebox[7cm]{Kritish Dhaubanjar \hfill [38998]}\\
+\makebox[7cm]{Pradyumna Subedi \hfill [39005]}
 %\makebox[9cm]{Member Name \hfill [Roll/Symbol No.]}\\
 } % Note that You must write your "Symbol Numbers"(Exam Roll Numbers) for Final Defenses
 
@@ -21,15 +21,15 @@
 \newcommand{\hod}{Er. Rabindra Khati} %specify Head ot the department
 \newcommand{\defYear}{2019} %Defense Year
 \newcommand{\defMonth}{August} %Defense Month- January, February, ...
-\newcommand{\defDay}{15} %specify Defense Day- 1, 2, ...
+\newcommand{\defDay}{14} %specify Defense Day- 1, 2, ...
 
 \newif\ifhassupervisor
 \hassupervisortrue % to display supervisor name use command- \hassupervisortrue
- 
+
 \newcommand{\supervisor}{Ajay Mani Paudel} % Specify Name of Supervisor for Major Project
 \newcommand{\degSup}{Executive Director\\Natural Language Processing Hub} %Specify Designation of Supervisor for Major Project, use multiple lines (\\) if necessary
-\newcommand{\external}{External's Name} %Specify Name of External for Major Project (Required for Black Book)
-\newcommand{\degExternal}{External's Designation } %\\Second Line of Designation (if required)} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
+\newcommand{\external}{Dr. Diwakar Raj Pant} %Specify Name of External for Major Project (Required for Black Book)
+\newcommand{\degExternal}{Associate Professor \\ IOE Pulchwok Campus} %\\Second Line of Designation (if required)} %Specify Name of External for Major Project (Required for Black Book) , use multiple lines (\\) if necessary
 \newcommand{\source}[1]{\caption*{Source: {#1}} }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -154,18 +154,18 @@
 \pagenumbering{roman} % starts pagenumberins in Roman numerals i, ii, ...
 
 %Copyright Page is required for FINAL REPORT only. Comment this section for other Reports.
-%\KECcopyright % defined in KECReportFormat.tex
+\KECcopyright % defined in KECReportFormat.tex
 
 %Approval Page is required for FINAL(Black Book Binded) REPORT of MAJOR PROJECT only. Comment this section for other Reports. 
-%\KECapproval % defined in KECReportFormat.tex
+\KECapproval % defined in KECReportFormat.tex
 
-\chapter*{Acknowledgment}
-\addcontentsline{toc}{chapter}{Acknowledgment}%to include this chapter in TOC
+\chapter*{Acknowledgement}
+\addcontentsline{toc}{chapter}{Acknowledgement}%to include this chapter in TOC
 First and foremost, we would like to express our sincere gratitude towards the Department of Computer and Electronics Engineering, Kantipur Engineering College, for providing us the opportunity to undertake this project which has helped us learn and implement our skills and knowledge. We are grateful to the Head of Department, \textbf{Er. Rabindra Khati}, for his precious encouragement, support and guidance throughout the project. \par
-We would like to acknowledge, \textbf{Er. Ajay Mani Paudel}, for his constant supervision, unwavering support, invaluable suggestions and consultation throughout the project, which has propelled us to come a long way accomplishing the project with the finest result.\par
-We would like to express our utmost appreciation to \textbf{Er. Shiva Gautam}, for helping us with machine learning at various stages of this project. We are also highly indebted to \textbf{Er. Bishal Thapa} for co-operating with us and helping us carry out this project smoothly.
+We would like to acknowledge, \textbf{Er. Ajay Mani Paudel}, for his constant supervision, unwavering support, invaluable suggestions and consultation throughout the project, which has propelled us to come a long way in accomplishing the project with the finest result.\par
+We would like to express our utmost appreciation to \textbf{Er. Shiva Gautam}, for helping us with machine learning at various stages of this project. We are also highly indebted to \textbf{Er. Bishal Thapa} for cooperating with us and helping us carry out this project smoothly.
 \par
-Our thanks and appreciations also go to the authors of various papers that helped us gain the in-depth knowledge of various aspects. Finally, we are thankful to all our teachers and all other people who have contributed in completion this project and preparation of this report. We have tried to make this report error free. Any error in this report is our own responsibility. Suggestions and comments from readers are highly appreciable.\\
+Our thanks and appreciations also go to the authors of various papers that helped us gain in-depth knowledge of various aspects. Finally, we are thankful to all our teachers and all other people who have contributed in completion this project and preparation of this report. We have tried to make this report error free. Any error in this report is our own responsibility. Suggestions and comments from readers are highly appreciable.\\
 \par
 %to display members name under Acknowledgement
 \begin{flushleft}
@@ -184,7 +184,6 @@ Our machine learning approach is based upon Levenshtein distance between two sen
 \textbf{\textit{Keywords$-$}} semantic analysis, duplicate questions, natural language processing, machine learning, word embeddings
 
 
-
 %to adjust spacings for TOC, LOF, LOT
 {
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -201,14 +200,16 @@ Our machine learning approach is based upon Levenshtein distance between two sen
     \vskip 18\p@ % adjust space after heading 18pt
   }}
 \makeatother 
-
 \tableofcontents % prints table of contents
 \listoffigures % prints list of figures
+\addcontentsline{toc}{chapter}{List of Figures} % to add references in TOC
+
 \listoftables % prints list of table
+\addcontentsline{toc}{chapter}{List of Tables} % to add references in TOC
 }
 
-\addcontentsline{toc}{chapter}{List of Figures} % to add references in TOC
-\addcontentsline{toc}{chapter}{List of Tables} % to add references in TOC
+%\addcontentsline{toc}{chapter}{List of Figures} % to add references in TOC
+%\addcontentsline{toc}{chapter}{List of Tables} % to add references in TOC
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %comment this chapter if you don't have List of Abbreviations
@@ -237,12 +238,12 @@ Understanding semantic relatedness of questions would allow understanding of muc
 \end{figure}
 
 In figure \ref{questions} though the questions with qid1 and qid2 of 6542 and 6543 respectively mean the same, the phrase are completely different and hence are the duplicate questions. The existence of duplicate questions can be analyzed using the machine learning and training them using the datasets.\par
-Unlike the first one, the questions with qid1 and qid2 of 895 and 896 respecively shown in figure \ref{questions} look similar in terms of phrases but are not the duplicates. We need to test for exact semantic coincidence between questions and analyze if it is the question with same intent.
+Unlike the first one, the questions with qid1 and qid2 of 895 and 896 respectively shown in figure \ref{questions} look similar in terms of phrases but are not duplicates. We need to test for exact semantic coincidence between questions and analyze if it is the question with the same intent.
 
 \section{Problem Statement}
 All the forums are based on the principle that ensures, each unique question exists on the forum only once and that there should be a single question section for each logically distinct question.  For example, we'd consider questions like ``What are the best ways to lose weight?'', ``How can a person reduce weight?'' and ``What are effective weight loss plans?'' to be duplicate questions because they all have the same intent and should not exist separately because the intent behind both is identical.\par
 
-The duplication of questions in Q\&A Forums results in the lack of sensible search for the user base. A dull redundancy in the questions and answers still result in inadequacy of responses to the questioners. Inappropriate segragation of the valid information stream and unwanted distribution of the user base on varying level of activity and intellect of answers while polluting the user's feed. 
+The duplication of questions in Q\&A Forums results in the lack of sensible search for the user base. A dull redundancy in the questions and answers still result in inadequacy of responses to the questioners. Inappropriate segregation of the valid information stream and unwanted distribution of the user base on varying level of activity and intellect of answers while polluting the user's feed. 
 
 %The problems resulted due to question duplication may be enlisted as:
 %\begin{enumerate}
@@ -255,15 +256,15 @@ The duplication of questions in Q\&A Forums results in the lack of sensible sear
 \section{Objectives}
 \begin{enumerate}
 \item To develop a module to analyze and identify the questions having same semantic meaning so as to prevent the duplication for Q\&A forums like Quora .
-\item To develop a module that would assist mitigatation of redundancy in answers to support high-quality knowledge base.
+\item To develop a module that would assist mitigation of redundancy in answers to support high-quality knowledge base.
 \end{enumerate}
 
 \section{Applications}
-Ideally, using this approach, the indentified duplicate questions could be merged together into a single canonical question, as doing so would provide a number of usage.  
+Ideally, using this approach, the identified duplicate questions could be merged together into a single canonical question, as doing so would provide a number of usage.  
 \begin{enumerate}
 	\item Avoid frequently repeated questions from polluting highly engaged user's feed on Q\&A forums caused by slight variations on the same questions.
-	\item Improve search and discovery based on knowlegde of alternative phrasings of the same questions.
-	\item High quality Q\&A knowledge bases having more value to users and researchers when there is a single cannonical question and colections of answers, instead of having knowledge fragmented and spread throughout the site.
+	\item Improve search and discovery based on knowledge of alternative phrasings of the same questions.
+	\item High quality Q\&A knowledge bases having more value to users and researchers when there is a single canonical question and collections of answers, instead of having knowledge fragmented and spread throughout the site.
 \end{enumerate}
 
 
@@ -328,7 +329,7 @@ of modeling in the given manner was, in the known state of the art, traditional 
 A likely cause of this anomaly is the simple absence of a sufficiently large paraphrase dataset in the
 domain of user-generated noisy texts on microblogs such as Twitter.
 
-In the paper `Duplicate Quora Questions Detection' \cite{Guo2017DuplicateQQ} the main idea was to first vectorize questions and extract features, train and predict using machine learning techniques based on question vectors and features previously built. They implemented two approaches to detect if two questions are duplicate. Different vectorization and feature extracting methods were used in the two approaches, one based on the Word2Vec model and \ac{TFIDF} score, the other one is a Neural Network method based on term frequency. Different classification methods were also used, for example, \ac{KNN}, \ac{SVM} and Random Forest. This reached accuracies of nearly 80\% in both two approaches.
+In the paper `Duplicate Quora Questions Detection' \cite{Guo2017DuplicateQQ} the main idea was to first vectorize questions and extract features, train and predict using machine learning techniques based on question vectors and features previously built. They implemented two approaches to detect if two questions are duplicates. Different vectorization and feature extracting methods were used in the two approaches, one based on the Word2Vec model and \ac{TFIDF} score, the other one is a Neural Network method based on term frequency. Different classification methods were also used, for example, \ac{KNN}, \ac{SVM} and Random Forest. This reached accuracies of nearly 80\% in both two approaches.
 
 Using a dataset of 400,000 labeled question pairs provided by Q\&A forum Quora, researcher at Department of Computer Science, Stanford University explored a series of deep learning methodologies for detecting duplicate question pairs: convolutional neural networks (CNNs), long short-term memory networks (LSTMs), and a hybrid model\cite{Addair2017DuplicateQP}. All three models are built atop a siamese network architecture and multilayer perceptron concatenation for the final inference. Empirical results show that LSTMs outperform CNNs in terms of accuracy, and that combining the two techniques provides no additional inference improvements. Moreover, all three deep learning techniques significantly outperform traditional NLP methods and simple multilayer perceptron baselines.
 
@@ -361,7 +362,7 @@ Evaluation for extracting various features carried out which includes the concep
 
 \chapter{Methodology}
 \section{System Architecture and Overview}
-The overall architecture of our system is show below. For each question in the pairs, the system undergoes a series of data preprocessing, feature extraction and engineering steps. The features from the question pairs are fed into a feed forward neural network for training and testing the accuracies. Similarly, the resulting trained model is used to evaluate a new pair of questions, following the same set of procedures of preprocessing, feature extraction and engineering to test for duplication.
+The overall architecture of our system is show below. For each question in the pairs, the system undergoes a series of data preprocessing, feature extraction and engineering steps. The features from the question pairs are fed into a feed forward neural network for training and testing accuracies. Similarly, the resulting trained model is used to evaluate a new pair of questions, following the same set of procedures of preprocessing, feature extraction and engineering to test for duplication.
 
 \begin{figure}[H]
 \begin{center}
@@ -372,7 +373,7 @@ The overall architecture of our system is show below. For each question in the p
 
 
 \section{Data Acquisition and Dataset Description}
-Quora has given an (almost) real-world dataset\cite{dataset} consising of a total of 404,290 question pairs in a tab-separated format; 255045 negative samples (non-duplicates) and 149306 positive samples (duplicates)  with the label of \textit{is\_duplicate} along with every question pair. Positive samples comprises 40\% of the total question pairs.
+Quora has given an (almost) real-world dataset\cite{dataset} consisting of a total of 404,290 question pairs in a tab-separated format; 255045 negative samples (non-duplicates) and 149306 positive samples (duplicates)  with the label of \textit{is\_duplicate} along with every question pair. Positive samples comprises 40\% of the total question pairs.
 
 Target datasets can be downloaded from Quora. The training dataset contains valid question pairs , with labels: 
 \begin{itemize}
@@ -392,7 +393,7 @@ As a comparison, the test dataset contains 20\% of the total question pairs, but
 \end{figure}
 
 \section{Data Pre-processing}
-Insignificant columns; `id', `qid1', `qid2' are dropped from the dataset since these have no contibution in the learning the semantics of the questions. \textbf{Tokenization} and \textbf{lemmatization} are performed for each question on the dataset. Similarly, question mark (?) and all the \textbf{stops words} in the dataset are removed.
+Insignificant columns; `id', `qid1', `qid2' are dropped from the dataset since these have no contribution in the learning the semantics of the questions. \textbf{Tokenization} and \textbf{lemmatization} are performed for each question on the dataset. Similarly, question mark (?) and all the \textbf{stops words} in the dataset are removed.
 
 \subsection{Word Tokenization}
 Word tokenization is the process of splitting a large sample of text into words. This is a requirement in natural language processing tasks where each word needs to be captured and subjected to further analysis like classifying and counting them for a particular sentiment etc.
@@ -406,7 +407,7 @@ Word tokenization is the process of splitting a large sample of text into words.
 \end{figure}
 
 \subsection{Stopwords}
-A stop word is a commonly used word (such as “the”, “a”, “an”, “in”) that a search engine has been programmed to ignore, both when indexing entries for searching and when retrieving them as the result of a search query. We would not want these words taking up space in our database, or taking up valuable processing time. For this, we can remove them easily, by storing a list of words that you consider to be stop words. \ac{NLTK} in python has a list of stopwords stored in 16 different languages.
+A stopword is a commonly used word (such as “the”, “a”, “an”, “in”) that a search engine has been programmed to ignore, both when indexing entries for searching and when retrieving them as the result of a search query. We would not want these words taking up space in our database, or taking up valuable processing time. For this, we can remove them easily, by storing a list of words that you consider to be stop words. \ac{NLTK} in python has a list of stopwords stored in 16 different languages.
 \begin{figure}[tbh]
 \begin{center}
 	\includegraphics[width = 5.5in]{images/stopwords.png}
@@ -438,10 +439,10 @@ The goal of both stemming and lemmatization is to reduce inflectional forms and 
 
 
 \section{Feature Extraction}
-The Machine Learning models as anticipated, is going to take in a lot of numerical values and vectors. For example, the number of times a word appears in a piece of text can be considered a feature. Several features are derived from the input text, and aggreggated on a per-text basis into feature vectors through Vector Space Modelling. Vector Space Modelling can largely be implemented via following techniques:
+The Machine Learning models as anticipated, is going to take in a lot of numerical values and vectors. For example, the number of times a word appears in a piece of text can be considered a feature. Several features are derived from the input text, and aggregated on a per-text basis into feature vectors through Vector Space Modelling. Vector Space Modelling can largely be implemented via following techniques:
 
 \subsection{Traditional Bag of Words}
-A bag-of-words model is a way of extracting features from the text for the use in modeling. It is called a “bag” of words, because information about the order or structure of words in the document is discarded. This is only concerned with whether the known words occur in the document, not where in the document. Here, the length of document vector is equal to number of known words (vocabulary). 
+A bag-of-words model is a way of extracting features from the text for the use in modeling. It is called a “bag” of words, because information about the order or structure of words in the document is discarded. This is only concerned with whether the known words occur in the document, not where in the document. Here, the length of document vector is equal to the number of known words (vocabulary). 
 
 \begin{figure}[tbh]
 \begin{center}
@@ -480,7 +481,7 @@ Where:
 \end{itemize} 
 
 \subsection{Word Embedding: word2vec}
-Word embedding is a collective name for a set of feature learning techniques and language modeling in Natural Language Processing. Here words and phrases are mapped into vectors of real numbers. These models are shallow, two-layer neural networks that are trained to reconstruct linguistic contexts of words. Word2vec \cite{DBLPRong14} takes input a very large corpus of text and produces a vector space, which consist of several hundred dimensions, with each unique word in the corpus assigned equivalent vector in the space. Word vectors are positioned in the corresponding vector space such that words that share common contexts in the body are located in near to one another in the space. 
+Word embedding is a collective name for a set of feature learning techniques and language modeling in Natural Language Processing. Here words and phrases are mapped into vectors of real numbers. These models are shallow, two-layer neural networks that are trained to reconstruct linguistic contexts of words. Word2vec \cite{DBLPRong14} takes input a very large corpus of text and produces a vector space, which consist of several hundred dimensions, with each unique word in the corpus assigned equivalent vector in the space. Word vectors are positioned in the corresponding vector space such that words that share common contexts in the body are located near to one another in the space. 
 
 \subsubsection{Continuous Bag of Word Model}
 \ac{CBOW} is learning to predict the word by the context. A context may be single word or multiple word for a given target words. Lets see this by an example “The cat jumped over the puddle.” So one approach is to treat {“The”, “cat”, ’over”, “the’, “puddle”} as a context and from these words, be able to predict or generate the center word “jumped”. This type of model we call a Continuous Bag of Words  Model.
@@ -685,7 +686,7 @@ In the brain, neurons can be connected to many other neurons nearby. In a typica
 
 After completion of feature engineering, the parameters extracted are now tested to evaluate how these parameters affect the performance of our neural network. 16 best parameters are chosen through the analysis of correlation heat-map as show in figure \ref{heatmap}. Artificial Neural Network is designed consisting of 5 hidden layers. Input layer consists of 16 nodes that send information to the hidden layer. The exact artificial neural network of our model, consist of an input layer with 16 input nodes, 5 hidden layers with 8 nodes each for precise result calculation and a single output node that results 1 or 0 i.e. duplicate or not\_duplicate.
 
-The nodes in the input layer and the hidden layers have \ac{ReLU} as the activation function, while the output node has sigmoid function as the activation fucntion.
+The nodes in the input layer and the hidden layers have \ac{ReLU} as the activation function, while the output node has sigmoid function as the activation function.
 
 Mathematically, \ac{ReLU} it is defined as y = max(0, x). Visually, it looks like the following:
 
@@ -717,7 +718,7 @@ Mathematically, \ac{ReLU} it is defined as y = max(0, x). Visually, it looks lik
 	\end{figure}
 	
 \subsection{Adam optimization}
-Adam is an optimization algorithm that can used instead of the classical stochastic gradient descent procedure to update network weights iterative based in training data. Stochastic gradient descent maintains a single learning rate (termed alpha) for all weight updates and the learning rate does not change during training. The method computes individual adaptive learning rates for different parameters from estimates of first and second moments of the gradients.
+Adam is an optimization algorithm that can be used instead of the classical stochastic gradient descent procedure to update network weights iterative based on training data. Stochastic gradient descent maintains a single learning rate (termed alpha) for all weight updates and the learning rate does not change during training. The method computes individual adaptive learning rates for different parameters from estimates of first and second moments of the gradients.
 Adam can be looked at as a combination of Root Mean Square Propagation and Stochastic Gradient Descent with momentum. It uses the squared gradients to scale the learning rate like Root Mean Square Propagation and it takes advantage of momentum by using moving average of the gradient instead of gradient itself like Stochastic Gradient Descent with momentum.
 \subsubsection{Adam Configuration Parameters}
 \begin{itemize}
@@ -797,9 +798,9 @@ Our development approach is based upon \textbf{`Test Driven Development'}, that 
 \newpage
 \chapter{Results and Analysis}
 \section{Confusion Matrix}
-A Confusion Matrix is a popular representation of the performance of classification models. The matrix (table) shows us the number of correctly and incorrectly classified examples, compared to the actual outcomes (target value) in the test data. One of the advantages of using confusion matrix as evaluation tool is that it allows more detailed analysis (such as if the model is confusing two classes), than simple proportion of correctly classified examples (accuracy) which can give misleading results if the dataset is unbalanced (i.e. when there are huge differences in number of between difference classes).
+A Confusion Matrix is a popular representation of the performance of classification models. The matrix (table) shows us the number of correctly and incorrectly classified examples, compared to the actual outcomes (target value) in the test data. One of the advantages of using confusion matrix as evaluation tool is that it allows a more detailed analysis (such as if the model is confusing two classes), than simple proportion of correctly classified examples (accuracy) which can give misleading results if the dataset is unbalanced (i.e. when there are huge differences in number of between different classes).
 
-The matrix is n by n, where n is the number of classes. The simplest classifiers, called binary classifiers, has only two classes: positive/negative, yes/no, male/female… Performance of a binary classifier is summarized in a confusion matrix that cross-tabulates predicted and observed examples into four options:
+The matrix is n by n, where n is the number of classes. The simplest classifiers, called binary classifiers, has only two classes: positive/negative, yes/no, male/female… Performance of a binary classifier is summarized in a confusion matrix that cross-tabulated predicted and observed examples into four options:
 
 \begin{itemize}
 	\item True Positive (TP): Correctly predicting a label (we predicted “yes”, and it’s “yes”),
@@ -893,6 +894,7 @@ The “steepness” of \ac{ROC} curves is also important, since it is ideal to m
 \end{center}
 \end{figure}
 
+
 \section{Work Schedule}
 \begin{figure}[H]
 \begin{center}
@@ -904,7 +906,7 @@ The “steepness” of \ac{ROC} curves is also important, since it is ideal to m
 
 \chapter{Conclusion}
 \section{Conclusion}
-The main objective of this project was to develop a module to analyze and identify the questions having same semantic meaning so as to prevent the duplication for Q\&A forums like Quora and which would be able to assist mitigatation of redundancy in answers to support high-quality knowledge base. Using the machine learning techniques on the dataset, the main goal was fulfilled. The project involved understanding the challenges in the collection of relevant features from sentences and designing a system to decide upon the question of duplication of question pairs, and the semantic relatedness of sentences from words.
+The main objective of this project was to develop a module to analyze and identify the questions having the same semantic meaning so as to prevent the duplication for Q\&A forums like Quora and which would be able to assist mitigation of redundancy in answers to support high-quality knowledge base. Using the machine learning techniques on the dataset, the main goal was fulfilled. The project involved understanding the challenges in the collection of relevant features from sentences and designing a system to decide upon the question of duplication of question pairs, and the semantic relatedness of sentences from words.
 
 In conclusion, our projects is capable of adding values to a Q\&A forums and its users as mentioned in the applications.
 
@@ -913,11 +915,11 @@ Regardless of the fulfilment of the project objectives, there are few issues in 
 
 \begin{itemize}
 	\item Our system doesn't perform \ac{POS} tagging explicitly. Explicit relationship with adjacent and related words in a phrase, sentence, or paragraph is ignored.
-	\item Not designed for \ac{NER}, the subtask of information extraction that seeks to locate and classify named entity mentions in unstructured text into pre-defined categories such as the person names, organizations, locations, medical codes, time expressions, quantities, monetary values, percentages, etc.
+	\item Not designed for \ac{NER}, the subtask of information extraction that seeks to locate and classify named entity mentions in unstructured text into predefined categories such as the person names, organizations, locations, medical codes, time expressions, quantities, monetary values, percentages, etc.
 	\item Quora's dataset cannot cover the entirety of questions necessary for a machine model to interpret and so, there are cases where the system fails to do so.
 \end{itemize}
 
-We, in the field of statistics and machine learning tried to develop theoretical models aiming to predict the behaviour of a certain process, the idea of the quote, ``All models are wrong, but some are useful" is that every single model will be wrong, holds for every machine model, meaning that it will never represent the exact real behaviour. Having said that, even if a model cannot describe exactly the reality, it could be very helpful if it is close enough, where the areas of further improvements and enhancements are presented as follows:
+We, in the field of statistics and machine learning tried to develop theoretical models aiming to predict the behaviour of a certain process, the idea of the quote, ``All models are wrong, but some are useful" is that every single model will be wrong, holds for every machine model, meaning that it will never represent the exact real behaviour. Having said that, even if a model cannot describe exactly the reality, it could be very helpful if it is close enough, where the areas of further improvement and enhancements are presented as follows:
 
 \begin{itemize}
 	\item \textbf{Data from multiple Q\&A forums} \\
@@ -927,7 +929,7 @@ We, in the field of statistics and machine learning tried to develop theoretical
 	Part-of-speech tagging is harder yet more accurate than just having a list of words and their parts of speech, because some words can represent more than one part of speech at different times, and because some parts of speech are complex or unspoken. This is not rare, in natural languages, a large percentage of word-forms are ambiguous.
 	
 	\item {\textbf{Perform \acl{NER}}} \\
-	Classification of named entities that are present in a text into pre-defined categories like “individuals”, “companies”, “places”, “organization”, “cities”, “dates”, “product terminologies” etc. is not implemented in the system, but if performed, it could add a wealth of semantic knowledge to the content and helps to promptly understand the subject of any given text.
+	Classification of named entities that are present in a text into predefined categories like “individuals”, “companies”, “places”, “organization”, “cities”, “dates”, “product terminologies” etc. is not implemented in the system, but if performed, it could add a wealth of semantic knowledge to the content and helps to promptly understand the subject of any given text.
 \end{itemize}
 
 %Reference
